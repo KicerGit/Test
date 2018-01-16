@@ -1,7 +1,10 @@
 package com.imooc.o2o.web.shopadmin;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,8 +23,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.imooc.o2o.dto.ShopExecution;
 import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.Shop;
+import com.imooc.o2o.enums.ShopStateEnum;
 import com.imooc.o2o.service.ShopService;
 import com.imooc.o2o.util.HttpRequestServletUtil;
+import com.imooc.o2o.util.ImageUtil;
+import com.imooc.o2o.util.PathUtil;
 
 @Controller
 @RequestMapping("/shopadmin")
@@ -61,7 +67,29 @@ public class ShopManagementController {
 		if ((shop != null) && shopImg != null) {
 			PersonInfo owner = new PersonInfo();
 			owner.setUserId(1L);
-			ShopExecution se = shopService.addShop(shop, shopImg);
+			File shopImgFile = new File(PathUtil.getImgBasePath() + ImageUtil.getRandomFileName());
+			try {
+				shopImgFile.createNewFile();
+			} catch (IOException e) {
+				modelMap.put("success", false);
+				modelMap.put("errMsg", e.getMessage());
+				return modelMap;
+			}
+			try {
+				InputStreamToFile(shopImg.getInputStream(), shopImgFile);
+			} catch (IOException e) {
+				modelMap.put("success", false);
+				modelMap.put("errMsg", e.getMessage());
+				return modelMap;
+			}
+			ShopExecution se = shopService.addShop(shop, shopImgFile);
+			if (se.getState() == ShopStateEnum.CHECK.getState()) {
+				modelMap.put("success", true);
+			} else {
+				modelMap.put("defeat", false);
+				modelMap.put("errMsg", se.getState());
+			}
+			return modelMap;
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "上传图片不能为空");
@@ -70,8 +98,32 @@ public class ShopManagementController {
 		}
 
 	}
-	private static void  InputStreamToFile(InputStream ins,File file){
-		
-		
+
+	private static void InputStreamToFile(InputStream ins, File file) {
+		FileOutputStream os = null;
+		try {
+			os = new FileOutputStream(file);
+			int bytesRead = 0;
+			byte[] buffer = new byte[1024];
+			while ((bytesRead = ins.read(buffer)) != -1) {
+				os.write(buffer, 0, bytesRead);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			throw new RuntimeException("调用inputStreamToFile产生异常" + e.getMessage());
+		} finally {
+			try {
+				if (os != null) {
+					os.close();
+				}
+				if (ins != null) {
+					ins.close();
+				}
+			} catch (IOException e) {
+				// TODO: handle exception
+				throw new RuntimeException("调用inputStreamToFile关闭IO产生异常" + e.getMessage());
+			}
+		}
+
 	}
 }
