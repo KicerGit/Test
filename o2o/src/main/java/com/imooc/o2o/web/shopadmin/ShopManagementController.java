@@ -24,6 +24,7 @@ import com.imooc.o2o.dto.ShopExecution;
 import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.enums.ShopStateEnum;
+import com.imooc.o2o.exceptions.ShopOperationException;
 import com.imooc.o2o.service.ShopService;
 import com.imooc.o2o.util.HttpRequestServletUtil;
 import com.imooc.o2o.util.ImageUtil;
@@ -66,29 +67,39 @@ public class ShopManagementController {
 		// 2.注册店铺
 		if ((shop != null) && shopImg != null) {
 			PersonInfo owner = new PersonInfo();
+			//Session TODO
 			owner.setUserId(1L);
+			shop.setOwner(owner);
 			File shopImgFile = new File(PathUtil.getImgBasePath() + ImageUtil.getRandomFileName());
-			try {
-				shopImgFile.createNewFile();
-			} catch (IOException e) {
-				modelMap.put("success", false);
-				modelMap.put("errMsg", e.getMessage());
-				return modelMap;
-			}
-			try {
+			
+			/*try {
 				InputStreamToFile(shopImg.getInputStream(), shopImgFile);
 			} catch (IOException e) {
 				modelMap.put("success", false);
 				modelMap.put("errMsg", e.getMessage());
 				return modelMap;
+			}*/
+			
+			ShopExecution se;
+			try {
+				se = shopService.addShop(shop, shopImg.getInputStream(),shopImg.getOriginalFilename());
+				if (se.getState() == ShopStateEnum.CHECK.getState()) {
+					modelMap.put("success", true);
+				} else {
+					modelMap.put("defeat", false);
+					modelMap.put("errMsg", se.getState());
+				}
+			} catch (IOException e) {
+				modelMap.put("success", false);
+				modelMap.put("errMsg", e.getMessage());
+				return modelMap;
 			}
-			ShopExecution se = shopService.addShop(shop, shopImgFile);
-			if (se.getState() == ShopStateEnum.CHECK.getState()) {
-				modelMap.put("success", true);
-			} else {
-				modelMap.put("defeat", false);
-				modelMap.put("errMsg", se.getState());
+			catch (ShopOperationException e) {
+				modelMap.put("success", false);
+				modelMap.put("errMsg", e.getMessage());
+				return modelMap;
 			}
+			
 			return modelMap;
 		} else {
 			modelMap.put("success", false);
@@ -99,7 +110,7 @@ public class ShopManagementController {
 
 	}
 
-	private static void InputStreamToFile(InputStream ins, File file) {
+/*	private static void InputStreamToFile(InputStream ins, File file) {
 		FileOutputStream os = null;
 		try {
 			os = new FileOutputStream(file);
@@ -125,5 +136,5 @@ public class ShopManagementController {
 			}
 		}
 
-	}
+	}*/
 }

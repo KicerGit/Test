@@ -7,7 +7,7 @@ public class PathUtil {
 		String os = System.getProperty("os.name");
 		String basePath = "";
 		if (os.toLowerCase().startsWith("win")) {
-			basePath = "D:/projectdev/image";
+			basePath = "E:/projectdev/image";
 		} else {
 			basePath = "/Users/baidu/work/image";
 		}

@@ -1,53 +1,15 @@
-2017-12-18 19:46:40.692 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 19:46:40.742 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: null, 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 19:46:40.6(Timestamp), 2017-12-18 19:46:40.6(Timestamp), 0(Integer), hao(String)
-2017-12-18 19:49:52.972 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 19:49:52.997 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 19:49:52.947(Timestamp), 2017-12-18 19:49:52.947(Timestamp), 0(Integer), hao(String)
-2017-12-18 19:49:53.070 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 19:49:53.097 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\4\2017121819495369229.jpg
-2017-12-18 19:49:53.097 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\4\2017121819495369229.jpg
-2017-12-18 19:49:53.098 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:01:24.965 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:01:25.001 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:01:24.942(Timestamp), 2017-12-18 20:01:24.942(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:01:25.001 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:01:25.009 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\5\2017121820012558848.jpg
-2017-12-18 20:01:25.009 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\5\2017121820012558848.jpg
-2017-12-18 20:01:25.009 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:02:17.880 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:02:17.907 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:02:17.858(Timestamp), 2017-12-18 20:02:17.858(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:02:17.908 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:02:17.915 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\6\2017121820021719993.jpg
-2017-12-18 20:02:17.915 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\6\2017121820021719993.jpg
-2017-12-18 20:02:17.915 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:03:18.718 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:03:18.742 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:03:18.684(Timestamp), 2017-12-18 20:03:18.684(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:03:18.743 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:23:16.416 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:23:16.451 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:23:16.369(Timestamp), 2017-12-18 20:23:16.369(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:23:16.452 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:23:16.459 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\8\2017121820231685184.jpg
-2017-12-18 20:23:16.460 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\8\2017121820231685184.jpg
-2017-12-18 20:23:16.460 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:28:17.631 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:28:17.657 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:28:17.61(Timestamp), 2017-12-18 20:28:17.61(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:28:17.658 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:28:17.665 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\9\2017121820281736961.jpg
-2017-12-18 20:28:17.665 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\9\2017121820281736961.jpg
-2017-12-18 20:28:17.665 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:29:44.140 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:29:44.164 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:29:44.116(Timestamp), 2017-12-18 20:29:44.116(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:29:44.165 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:29:44.172 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\10\2017121820294468490.jpg
-2017-12-18 20:29:44.172 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\10\2017121820294468490.jpg
-2017-12-18 20:29:44.172 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
-2017-12-18 20:40:57.824 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:40:57.852 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:40:57.794(Timestamp), 2017-12-18 20:40:57.794(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:40:57.853 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:40:57.911 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, priority=?, last_edit_time=?, enable_status=?, advice=?, area_id=?, shop_category_id=? where shop_id=? 
-2017-12-18 20:40:57.911 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 插花羊肉馆2(String), test(String), chahua(String), 15850651319(String), H:/1.jpg(String), 1(Integer), 2017-12-18 20:40:57.794(Timestamp), 0(Integer), hao(String), 2(Integer), 1(Long), 11(Long)
-2017-12-18 20:40:57.951 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
-2017-12-18 20:47:25.823 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
-2017-12-18 20:47:25.858 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆5(String), test(String), chahua(String), 15850651319(String), null, 1(Integer), 2017-12-18 20:47:25.792(Timestamp), 2017-12-18 20:47:25.792(Timestamp), 0(Integer), hao(String)
-2017-12-18 20:47:25.859 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2017-12-18 20:47:25.869 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\12\2017121820472545815.jpg
-2017-12-18 20:47:25.869 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\12\2017121820472545815.jpg
-2017-12-18 20:47:25.869 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/C:/Users/Administrator/Workspaces/MyEclipse%202016%20CI/o2o/target/test-classes/
+2018-01-17 00:31:48.129 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2018-01-17 00:31:48.170 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆4(String), test2(String), chahua2(String), 15850651319(String), null, 1(Integer), 2018-01-17 00:31:48.034(Timestamp), 2018-01-17 00:31:48.034(Timestamp), 0(Integer), hao(String)
+2018-01-17 00:31:48.247 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2018-01-17 00:31:48.255 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\12\2018011700314880693.jpg
+2018-01-17 00:31:48.256 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\12\2018011700314880693.jpg
+2018-01-17 00:31:48.256 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/E:/GitHub/Test/o2o/target/test-classes/
+2018-01-17 00:34:35.631 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2018-01-17 00:34:35.663 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 插花羊肉馆4(String), test2(String), chahua2(String), 15850651319(String), null, 1(Integer), 2018-01-17 00:34:35.613(Timestamp), 2018-01-17 00:34:35.613(Timestamp), 0(Integer), hao(String)
+2018-01-17 00:34:35.663 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2018-01-17 00:34:35.686 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\13\2018011700343585975.jpg
+2018-01-17 00:34:35.686 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :E:\projectdev\image\upload\images\item\shop\13\2018011700343585975.jpg
+2018-01-17 00:34:35.686 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/E:/GitHub/Test/o2o/target/test-classes/
+2018-01-17 00:34:35.848 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, priority=?, last_edit_time=?, enable_status=?, advice=?, area_id=?, shop_category_id=? where shop_id=? 
+2018-01-17 00:34:35.849 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 插花羊肉馆4(String), test2(String), chahua2(String), 15850651319(String), \upload\images\item\shop\13\2018011700343585975.jpg(String), 1(Integer), 2018-01-17 00:34:35.613(Timestamp), 0(Integer), hao(String), 2(Integer), 1(Long), 13(Long)
+2018-01-17 00:34:35.850 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
